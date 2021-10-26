@@ -118,7 +118,8 @@ camera.position.x = kangaroo.position.x;
 function spawnShrubs() {
   //write code here to spawn the clouds
   if (frameCount % 150 === 0) {
-    shrub = createSprite(200,330,10,10)
+ 
+   shrub = createSprite(camera.position.x+500,330,40,10);
 
 //Set the x-position of the shrub according to the game camera.
     shrub.velocityX = -(6 + 3*score/100)
